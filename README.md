@@ -46,7 +46,9 @@ To get up and running quickly, you can deploy to Heroku using the button below
 
 This will deploy an instance of the crewlink-server. You can get the URL of your server by using the app name that you gave when you launched the app on heroku and appending `.herokuapp.com`. You can also find the URL of your server by going to "Settings", scrolling down to "Domains", and removing the `https://` and trailing slash from the url. Using this URL, follow step 4 of the [installation instructions](https://github.com/ottomated/CrewLink-server#manual-installation) to connect your client to your server instance.
 
-To put it simply, if you named your app "crewlink", you should put `crewlink.herokuapp.com:80` in the "Voice Server" field in the CrewLink client.
+To put it simply, if you named your app "crewlink", you should put `crewlink.herokuapp.com:443` or `https://crewlink.herokuapp.com` in the "Voice Server" field in the CrewLink client.
+
+(`crewlink.herokuapp.com:80` and `crewlink.herokuapp.com` are no longer valid since CrewLink client version 1.12, due to changes in order to make all connections through https and not http. If you use any of the previous Voice Servers, the CrewLink client will output the following error: `Couldn't fetch latest offsets from server`, even if the offset folder on the server does contain the latest .yml offset file)
 
 ## Docker Quickstart
 
