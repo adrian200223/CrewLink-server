@@ -46,7 +46,7 @@ To get up and running quickly, you can deploy to Heroku using the button below
 
 This will deploy an instance of the crewlink-server. You can get the URL of your server by using the app name that you gave when you launched the app on heroku and appending `.herokuapp.com`. You can also find the URL of your server by going to "Settings", scrolling down to "Domains", and removing the `https://` and trailing slash from the url. Using this URL, follow step 4 of the [installation instructions](https://github.com/ottomated/CrewLink-server#manual-installation) to connect your client to your server instance.
 
-To put it simply, if you named your app "crewlink", you should put on the "Voice Server" field in the CrewLink client: "crewlink.herokuapp.com:80".
+To put it simply, if you named your app "crewlink", you should put `crewlink.herokuapp.com:80` in the "Voice Server" field in the CrewLink client.
 
 ## Docker Quickstart
 
